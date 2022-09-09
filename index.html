@@ -567,10 +567,7 @@
     
     <div class="row">
 		
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="dplayer" class="dplayer-video"
-                    ></div>
-        </div>
+			<iframe src='//player.bilibili.com/player.html?aid=51818204&bvid=BV1J4411v7g6&cid=90717632&page=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  width="100%"> </iframe>
 		
     </div>
 </div>
@@ -587,7 +584,7 @@
             preload: 'auto',
             volume: Number('0.7'),
             video: {
-                url: 'https://www.bilibili.com/video/BV1J4411v7g6?spm_id_from=333.337.search-card.all.click&vd_source=7419caa9657187b705986c1ab6ab2bb4',
+                url: '',
                 pic: '',
                 thumbnails: ''
             }
@@ -952,6 +949,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -995,6 +1000,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
